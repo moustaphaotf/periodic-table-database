@@ -16,6 +16,14 @@ else
   # if not, check by the symbol or element name
 fi
 
-# if the element exists
-echo $ELEMENT_RESULT
+# if the element doesn't exist
+if [[ -z $ELEMENT_RESULT ]] 
+then
+  # if not show an error
+  echo -e "I could not find that element in the database."
+else
+  # print the message
+  
+fi
+
 
